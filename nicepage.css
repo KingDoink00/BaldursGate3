@@ -46118,6 +46118,41 @@ a.u-link.u-text-hover-color-var:hover {
     min-height: 36px;
   }
 }
+.map-thumbnail {
+  max-height: 100%;
+  max-width: 100%;
+  cursor: zoom-in;
+  object-fit: contain;
+  display: block;
+}
+
+.u-layout-cell-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Fullscreen modal image */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.fullscreen-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  cursor: zoom-out;
+}
+
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
